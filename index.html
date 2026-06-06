@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Drive Collection Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hard Drive Collection</h1>
+            <p class="subtitle">A curated database of storage devices</p>
+        </header>
+
+        <div class="controls">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search by manufacturer, model, or capacity..."
+                class="search-bar"
+            >
+            <div class="filter-info">
+                Sorted by: Manufacturer → Capacity → Model
+            </div>
+        </div>
+
+        <div id="stats" class="stats-section">
+            <div class="stat">
+                <span class="stat-label">Total Drives:</span>
+                <span class="stat-value" id="totalDrives">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Total Capacity:</span>
+                <span class="stat-value" id="totalCapacity">0 TB</span>
+            </div>
+        </div>
+
+        <div id="drivesContainer" class="drives-grid">
+            <p class="loading">Loading drives...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

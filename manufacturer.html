@@ -3,45 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hard Drive Collection Database</title>
+    <title>Hard Drive Collection - Manufacturer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Hard Drive Collection</h1>
-            <p class="subtitle">A curated database of storage devices</p>
+            <a href="index.html" class="back-link">← Back to Manufacturers</a>
+            <h1 id="manufacturerName">Loading...</h1>
+            <p class="subtitle">Drives from this manufacturer</p>
         </header>
 
         <div class="controls">
             <input 
                 type="text" 
                 id="searchInput" 
-                placeholder="Search manufacturers..."
+                placeholder="Search by model, capacity, or type..."
                 class="search-bar"
             >
         </div>
 
         <div id="stats" class="stats-section">
             <div class="stat">
-                <span class="stat-label">Total Drives:</span>
-                <span class="stat-value" id="totalDrives">0</span>
+                <span class="stat-label">Drives:</span>
+                <span class="stat-value" id="driveCount">0</span>
             </div>
             <div class="stat">
                 <span class="stat-label">Total Capacity:</span>
                 <span class="stat-value" id="totalCapacity">0 TB</span>
             </div>
-            <div class="stat">
-                <span class="stat-label">Manufacturers:</span>
-                <span class="stat-value" id="totalManufacturers">0</span>
-            </div>
         </div>
 
-        <div id="manufacturersContainer" class="manufacturers-grid">
-            <p class="loading">Loading manufacturers...</p>
+        <div id="drivesContainer" class="drives-grid">
+            <p class="loading">Loading drives...</p>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="manufacturer-script.js"></script>
 </body>
 </html>

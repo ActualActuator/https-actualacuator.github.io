@@ -52,34 +52,14 @@ function displayManufacturers(manufacturers, manufacturerMap, allDrives, filter 
         }, 0);
         
         const driveTypes = [...new Set(drives.map(d => d.type).filter(Boolean))];
+        const safeManufacturer = manufacturer.replace(/'/g, "\\'");
         
-        return `
-            <div class="manufacturer-card" onclick="goToManufacturer('${manufacturer.replace(/'/g, "\\'")}')
-">
-                <h3>${manufacturer}</h3>
-                <div class="manufacturer-info">
-                    <div class="info-item">
-                        <span class="info-label">Drives:</span>
-                        <span class="info-value">${drives.length}</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Capacity:</span>
-                        <span class="info-value">${totalCapacity.toFixed(2)} TB</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Types:</span>
-                        <span class="info-value">${driveTypes.join(', ') || 'Not specified'}</span>
-                    </div>
-                </div>
-                <div class="click-hint">Click to view drives →</div>
-            </div>
-        `;
+        return `<div class="manufacturer-card" onclick="goToManufacturer('${safeManufacturer}')"><h3>${manufacturer}</h3><div class="manufacturer-info"><div class="info-item"><span class="info-label">Drives:</span><span class="info-value">${drives.length}</span></div><div class="info-item"><span class="info-label">Capacity:</span><span class="info-value">${totalCapacity.toFixed(2)} TB</span></div><div class="info-item"><span class="info-label">Types:</span><span class="info-value">${driveTypes.join(', ') || 'Not specified'}</span></div></div><div class="click-hint">Click to view drives →</div></div>`;
     }).join('');
 }
 
 // Navigate to manufacturer page
 function goToManufacturer(manufacturer) {
-    // Store the manufacturer in sessionStorage so the manufacturer page can retrieve it
     sessionStorage.setItem('selectedManufacturer', manufacturer);
     window.location.href = 'manufacturer.html';
 }

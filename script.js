@@ -76,7 +76,8 @@ function displayManufacturers(manufacturers, manufacturerMap, allDrives, filter 
         return;
     }
     
-    container.innerHTML = filteredManufacturers.map(manufacturer => {
+    let html = '';
+    filteredManufacturers.forEach(manufacturer => {
         const drives = manufacturerMap[manufacturer];
         const totalCapacity = drives.reduce((sum, drive) => {
             const capacity = parseFloat(drive.capacity);
@@ -86,8 +87,27 @@ function displayManufacturers(manufacturers, manufacturerMap, allDrives, filter 
         const driveTypes = [...new Set(drives.map(d => d.type).filter(Boolean))];
         const safeManufacturer = manufacturer.replace(/'/g, "\\'");
         
-        return `<div class="manufacturer-card" onclick="goToManufacturer('${safeManufacturer}')"><h3>${manufacturer}</h3><div class="manufacturer-info"><div class="info-item"><span class="info-label">Drives:</span><span class="info-value">${drives.length}</span></div><div class="info-item"><span class="info-label">Capacity:</span><span class="info-value">${totalCapacity.toFixed(2)} TB</span></div><div class="info-item"><span class="info-label">Types:</span><span class="info-value">${driveTypes.join(', ') || 'Not specified'}</span></div></div><div class="click-hint">Click to view drives →</div></div>`;
-    }).join('');
+        html += `<div class="manufacturer-card" onclick="goToManufacturer('${safeManufacturer}')">
+                    <h3>${manufacturer}</h3>
+                    <div class="manufacturer-info">
+                        <div class="info-item">
+                            <span class="info-label">Drives:</span>
+                            <span class="info-value">${drives.length}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Capacity:</span>
+                            <span class="info-value">${totalCapacity.toFixed(2)} TB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Types:</span>
+                            <span class="info-value">${driveTypes.join(', ') || 'Not specified'}</span>
+                        </div>
+                    </div>
+                    <div class="click-hint">Click to view drives →</div>
+                </div>`;
+    });
+    
+    container.innerHTML = html;
 }
 
 // Navigate to manufacturer page

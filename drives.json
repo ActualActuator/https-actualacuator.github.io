@@ -1,19 +1,654 @@
 [
     {
-        "manufacturer": "Seagate",
-        "model": "Barracuda 7200",
-        "capacity": "2",
+        "manufacturer": "Conner",
+        "model": "CFA540A",
+        "capacity": "0.5",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Fujitsu",
+        "model": "MAX3073NC",
+        "capacity": "72.8",
         "type": "HDD",
-        "rpm": "7200",
-        "interface": "SATA III",
-        "notes": "Example drive - replace with your collection"
+        "rpm": "10000"
+    },
+    {
+        "manufacturer": "Fujitsu",
+        "model": "MAX3073NC",
+        "capacity": "72.8",
+        "type": "HDD",
+        "rpm": "10000"
+    },
+    {
+        "manufacturer": "Fujitsu",
+        "model": "MAX3073NC",
+        "capacity": "72.8",
+        "type": "HDD",
+        "rpm": "10000"
+    },
+    {
+        "manufacturer": "Fujitsu",
+        "model": "MAX3073NC",
+        "capacity": "72.8",
+        "type": "HDD",
+        "rpm": "10000"
+    },
+    {
+        "manufacturer": "Fujitsu",
+        "model": "MHV2100BH-PL",
+        "capacity": "100",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Fujitsu",
+        "model": "MHZ2080BH-G1",
+        "capacity": "80",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Hitachi",
+        "model": "HDS721010CLA632",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Hitachi",
+        "model": "HDS721016PLA380",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Hitachi",
+        "model": "HDS721025CLA382",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Hitachi",
+        "model": "HDT721016SLA380",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Hitachi",
+        "model": "HTS421240H9AT00",
+        "capacity": "120",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Hitachi",
+        "model": "HTS541616J9SA00",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Hitachi",
+        "model": "HTS542560K9SA00",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "IBM",
+        "model": "IC35L120AVVA07-0",
+        "capacity": "120",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Maxtor",
+        "model": "4R160L00420P1",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Maxtor",
+        "model": "7Y250P00628R1",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Maxtor",
+        "model": "90576D4",
+        "capacity": "5.25",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Maxtor",
+        "model": "NAR61590",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Maxtor",
+        "model": "RAMC1TU0",
+        "capacity": "120",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Maxtor",
+        "model": "STM3320620AS",
+        "capacity": "320",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Maxtor",
+        "model": "VAM51JJ0",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Samsung",
+        "model": "HM020GI",
+        "capacity": "20",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Samsung",
+        "model": "SP0411N",
+        "capacity": "40",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Samsung",
+        "model": "ST320LM001",
+        "capacity": "320",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST250DM000",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST250DM000",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST250DM000",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST310014ACE",
+        "capacity": "10",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST310014ACE",
+        "capacity": "10",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST310014ACE",
+        "capacity": "10",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST310014ACE",
+        "capacity": "10",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST310014ACE",
+        "capacity": "10",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST310211A",
+        "capacity": "10",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3120023A",
+        "capacity": "120",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3120025A",
+        "capacity": "120",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3160215ACE",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3160215ACE",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3160815AS",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST336706LC",
+        "capacity": "36.7",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST340014AS",
+        "capacity": "40",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST340016A",
+        "capacity": "40",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST340810A",
+        "capacity": "40",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST340823A",
+        "capacity": "40",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3400633A",
+        "capacity": "400",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3400832AS",
+        "capacity": "400",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3500641AS",
+        "capacity": "500",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3500830A",
+        "capacity": "500",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST31000528AS",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3220820SCE",
+        "capacity": "220",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3220820SCE",
+        "capacity": "220",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3320413CS",
+        "capacity": "320",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST3320413CS",
+        "capacity": "320",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST2000DL001",
+        "capacity": "2",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST2000DM001",
+        "capacity": "2",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST2000DM001",
+        "capacity": "2",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST920217AS",
+        "capacity": "20",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST96812AS",
+        "capacity": "60",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST96812AS",
+        "capacity": "60",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST980811AS",
+        "capacity": "80",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST98823AS",
+        "capacity": "80",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST9120315AS",
+        "capacity": "120",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST9120822A",
+        "capacity": "120",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST9250315AS",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Seagate",
+        "model": "ST9250315AS",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "DT01ABA100V",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "DT01ACA100",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "DT01ACA100",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "DT01ACA100",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "DT01ACA100",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "MK1234GSX",
+        "capacity": "120",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "MK1517GAP",
+        "capacity": "150",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "MK1637GSX",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "MK2555GSXF",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "MK6052GSX",
+        "capacity": "60",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "MQ01ABD100",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "MQ01ABD100",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Toshiba",
+        "model": "MQ01ACF050",
+        "capacity": "500",
+        "type": "HDD"
     },
     {
         "manufacturer": "Western Digital",
-        "model": "Blue 3D NAND SSD",
+        "model": "WD1003FZEX-00MK2A0",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD10EARS-22Y5B1",
+        "capacity": "1",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD1600BB-56RDA0",
+        "capacity": "160",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD1800BB-00DAA0",
+        "capacity": "180",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD200BB-60CJA0",
+        "capacity": "200",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD200BB-75AUA1",
+        "capacity": "200",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD200EB-11BHF0",
+        "capacity": "200",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD2500AAJS-75B4A0",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD2500BVVT-28A26Y1",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD2500JB",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD2500JB-00GVA0",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD2500JB-22GVA0",
+        "capacity": "250",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD3000JB-00KFA0",
+        "capacity": "300",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD3200AAJS-22B4A0",
+        "capacity": "320",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD3200BEKT-60KA9T0",
+        "capacity": "320",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD3200BEKT-75PVMT1",
+        "capacity": "320",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD400BD-75MA0",
+        "capacity": "400",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD400LB-55AN0",
+        "capacity": "400",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD4005FZBX-00K5WB0",
+        "capacity": "4",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD5000AAKX-001CA0",
         "capacity": "500",
-        "type": "SSD",
-        "interface": "SATA III",
-        "notes": "Example drive - replace with your collection"
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD5000AAVS-00ZTB0",
+        "capacity": "500",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD5000BEKT-75KA9T0",
+        "capacity": "500",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD5000LPCX-60VHAT0",
+        "capacity": "500",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD40EFZX-68AWUN0",
+        "capacity": "4",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD80EB-28CGH2",
+        "capacity": "80",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD80EB-28CGH2",
+        "capacity": "80",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD800BB-53CAA0",
+        "capacity": "80",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD800BB-63JKC0",
+        "capacity": "80",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD800JB-00ETA0",
+        "capacity": "80",
+        "type": "HDD"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "WD80JD-75MSA3",
+        "capacity": "80",
+        "type": "HDD"
     }
 ]

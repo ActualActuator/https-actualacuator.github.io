@@ -1,8 +1,31 @@
+// Wait for DOM to be ready, then load manufacturers
+window.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM Content Loaded');
+    loadManufacturers();
+});
+
 // Fetch and display manufacturers
 async function loadManufacturers() {
+    console.log('Starting loadManufacturers');
+    const container = document.getElementById('manufacturersContainer');
+    console.log('Container element:', container);
+    
+    if (!container) {
+        console.error('manufacturersContainer element not found!');
+        return;
+    }
+    
     try {
+        console.log('Fetching drives.json');
         const response = await fetch('drives.json');
+        console.log('Response status:', response.status);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const drives = await response.json();
+        console.log('Drives loaded:', drives.length);
         
         // Group drives by manufacturer
         const manufacturerMap = {};
@@ -15,20 +38,29 @@ async function loadManufacturers() {
         
         // Sort manufacturers alphabetically
         const sortedManufacturers = Object.keys(manufacturerMap).sort();
+        console.log('Manufacturers:', sortedManufacturers);
         
         displayManufacturers(sortedManufacturers, manufacturerMap, drives);
         updateStats(drives, sortedManufacturers);
         setupSearch(sortedManufacturers, manufacturerMap, drives);
     } catch (error) {
         console.error('Error loading drives:', error);
-        document.getElementById('manufacturersContainer').innerHTML = 
-            '<p class="no-results">Error loading manufacturers. Please check the drives.json file.</p>';
+        const errorContainer = document.getElementById('manufacturersContainer');
+        if (errorContainer) {
+            errorContainer.innerHTML = '<p class="no-results">Error loading manufacturers: ' + error.message + '</p>';
+        }
     }
 }
 
 // Display manufacturers as cards
 function displayManufacturers(manufacturers, manufacturerMap, allDrives, filter = '') {
+    console.log('displayManufacturers called with', manufacturers.length, 'manufacturers');
+    
     const container = document.getElementById('manufacturersContainer');
+    if (!container) {
+        console.error('Container not found in displayManufacturers');
+        return;
+    }
     
     if (manufacturers.length === 0) {
         container.innerHTML = '<p class="no-results">No manufacturers found.</p>';
@@ -60,6 +92,7 @@ function displayManufacturers(manufacturers, manufacturerMap, allDrives, filter 
 
 // Navigate to manufacturer page
 function goToManufacturer(manufacturer) {
+    console.log('Navigating to:', manufacturer);
     sessionStorage.setItem('selectedManufacturer', manufacturer);
     window.location.href = 'manufacturer.html';
 }
@@ -74,24 +107,28 @@ function updateStats(drives, manufacturers) {
         return sum + (isNaN(capacity) ? 0 : capacity);
     }, 0);
     
-    document.getElementById('totalDrives').textContent = totalDrives;
-    document.getElementById('totalManufacturers').textContent = manufacturers.length;
+    const totalDrivesEl = document.getElementById('totalDrives');
+    const totalCapacityEl = document.getElementById('totalCapacity');
+    const totalManufacturersEl = document.getElementById('totalManufacturers');
     
-    // Format capacity display
-    if (totalCapacity >= 1000) {
-        document.getElementById('totalCapacity').textContent = (totalCapacity / 1000).toFixed(2) + ' PB';
-    } else {
-        document.getElementById('totalCapacity').textContent = totalCapacity.toFixed(2) + ' TB';
+    if (totalDrivesEl) totalDrivesEl.textContent = totalDrives;
+    if (totalManufacturersEl) totalManufacturersEl.textContent = manufacturers.length;
+    
+    if (totalCapacityEl) {
+        if (totalCapacity >= 1000) {
+            totalCapacityEl.textContent = (totalCapacity / 1000).toFixed(2) + ' PB';
+        } else {
+            totalCapacityEl.textContent = totalCapacity.toFixed(2) + ' TB';
+        }
     }
 }
 
 // Setup search functionality
 function setupSearch(manufacturers, manufacturerMap, allDrives) {
     const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', (e) => {
-        displayManufacturers(manufacturers, manufacturerMap, allDrives, e.target.value);
-    });
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            displayManufacturers(manufacturers, manufacturerMap, allDrives, e.target.value);
+        });
+    }
 }
-
-// Load manufacturers on page load
-document.addEventListener('DOMContentLoaded', loadManufacturers);

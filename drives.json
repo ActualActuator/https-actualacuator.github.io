@@ -1,0 +1,19 @@
+[
+    {
+        "manufacturer": "Seagate",
+        "model": "Barracuda 7200",
+        "capacity": "2",
+        "type": "HDD",
+        "rpm": "7200",
+        "interface": "SATA III",
+        "notes": "Example drive - replace with your collection"
+    },
+    {
+        "manufacturer": "Western Digital",
+        "model": "Blue 3D NAND SSD",
+        "capacity": "500",
+        "type": "SSD",
+        "interface": "SATA III",
+        "notes": "Example drive - replace with your collection"
+    }
+]
